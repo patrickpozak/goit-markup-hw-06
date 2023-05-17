@@ -412,6 +412,8 @@ textarea::placeholder {
   display: flex;
   align-items: center;
 }
+.checkbox-label + svg {
+}
 .checkbox-container input[type="checkbox"] {
   cursor: pointer;
   opacity: 0.5;
@@ -430,12 +432,11 @@ textarea::placeholder {
   background-color: var(--quaternary-color);
 }
 .checkbox-container input[type="checkbox"]:checked + .checkbox-label::before {
-  content: url(./images/icons.svg#icon-icon-check);
+  content: "";
   background-color: blue;
   display: flex;
   justify-content: center;
   align-items: center;
-  fill: var(--primary-color);
 }
 .checkbox-text-label {
   font-size: 14px;
