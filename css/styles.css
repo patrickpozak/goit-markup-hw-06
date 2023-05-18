@@ -407,36 +407,18 @@ textarea::placeholder {
   gap: 8px;
   margin-bottom: 30px;
 }
-.checkbox-container .checkbox-label {
-  cursor: pointer;
-  display: flex;
-  align-items: center;
-}
-.checkbox-label + svg {
-}
 .checkbox-container input[type="checkbox"] {
-  cursor: pointer;
-  opacity: 0.5;
-  position: absolute;
-  left: 55px;
+  appearance: none;
 }
-.checkbox-container .checkbox-label::before {
-  content: "";
-  width: 16px;
-  height: 15px;
-  border: 2px solid var(--text-color-1);
+.checkbox-container svg {
+  border: 2px solid var(--text-color-2);
   border-radius: 2px;
+  fill: none;
+  cursor: pointer;
 }
-.checkbox-container .checkbox-label:hover::before,
-.checkbox-container input[type="checkbox"]:hover + .checkbox-label::before {
-  background-color: var(--quaternary-color);
-}
-.checkbox-container input[type="checkbox"]:checked + .checkbox-label::before {
-  content: "";
-  background-color: blue;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+input#check:checked + svg {
+  border: none;
+  fill: var(--quaternary-color);
 }
 .checkbox-text-label {
   font-size: 14px;
